@@ -68,8 +68,8 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      - name: Grails build
-        run: docker run -it -v ${PWD}:/project -v ${HOME}/.grails/:/root/.grails/  -v ${HOME}/.m2/:/root/.m2/ ghcr.io/openetude/grailsbuilder:main grails prod war
+      - name: Project build
+        run: ./build.sh
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
