@@ -72,7 +72,8 @@ jobs:
         run: |
           chmod +x ./build.sh
           ./build.sh
-        shell: "bash -ilc {0}"
+        shell: 'script -q -e -c "bash {0}"'
+
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
