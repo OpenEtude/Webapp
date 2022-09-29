@@ -1,0 +1,4 @@
+*
+!target/etude.war
+!docker/*
+!db/*

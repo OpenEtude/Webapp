@@ -1,0 +1,62 @@
+.ecriture, .ecritureDossier, .house,.accept,.group,.cheque,.database_edit,.word,.search,.virement,.application_view_list,.chart_bar,.coins,.database_add,.money,.chart_pie,.roles,.database_delete,.exclamation,.database_save,.database_table,.xls,.shield,.information,.basket_edit,.book,.checked,.pending,.rejected,.folder,.dossier,.acte,.bienlibre, .bienaffecte, .bien,.operation,.folderoperation ,.favoris ,.noimg {
+   background: url(../images/skin/sprite6.png) no-repeat top left;
+   vertical-align: middle;
+   height:16px !important;line-height:16px !important;padding:1px 2px;padding-left:0px;display:inline-block !important;
+   width:20px !important;
+}
+.favoris { background-position: 0 -568px; } 
+.house { background-position: 0 0px; } 
+.accept { background-position: 0 -17px; } 
+.group { background-position: 0 -34px; } 
+.cheque { background-position: 0 -51px; } 
+.database_edit { background-position: 0 -68px; } 
+.word { background-position: 0 -85px; } 
+.search { background-position: 2px -100px; }
+.virement { background-position: 0 -119px; } 
+.application_view_list { background-position: 0 -136px; } 
+.chart_bar { background-position: 0 -153px; } 
+.coins { background-position: 0 -170px; } 
+.database_add { background-position: 0 -187px; } 
+.ecriture, .ecritureDossier, .money { background-position: 0 -204px; } 
+.chart_pie { background-position: 0 -221px; } 
+.roles { background-position: 0 -238px; } 
+.database_delete { background-position: 0 -255px; } 
+.exclamation { background-position: 0 -272px; } 
+.admin, .database_save { background-position: 0 -289px; } 
+.database_table { background-position: 0 -306px; } 
+.xls { background-position: 0 -323px; } 
+.shield { background-position: 0 -340px; } 
+.information { background-position: 0 -357px; } 
+.basket_edit { background-position: 0 -374px; } 
+.book { background-position: 0 -391px; } 
+.checked { background-position: 0 -408px; }
+.rejected { background-position: 0 -424px; } 
+.pending { background-position: 0 -438px; } 
+.folder,.dossier { background-position: 0 -457px; } 
+.acte { background-position: 0 -475px; } 
+.bien,.bienlibre { background-position: 0 -496px; } 
+.bienaffecte { background-position: 0 -515px; } 
+.operation { background-position: 0 -534px; } 
+.folderoperation { background-position: 0 -551px; } 
+
+span.ico{
+    line-height: 16px !important;
+    display: inline-block !important;
+    height: 16px !important;
+    width: 16px !important;
+}
+.noimg{background-image:none;}
+li .ecriture, li .ecritureDossier, li .folder,li .dossier,li .word,li .acte,li .cheque,li .virement,li .coins,li .bien,li .bienlibre,li .bienaffecte,li .operation,li .folderoperation,li .favoris,li .noimg {line-height:16px;}
+
+.buttons .house,.buttons .accept,.buttons .group,.buttons .cheque,.buttons .database_edit,.buttons .word,.buttons .search,.buttons .virement,.buttons .application_view_list,.buttons .chart_bar,.buttons .coins,.buttons .database_add,.buttons .money,.buttons .chart_pie,.buttons .roles,.buttons .database_delete,.buttons .exclamation,.buttons .database_save,.buttons .database_table,.buttons .xls,.buttons .shield,.buttons .information,.buttons .basket_edit,.buttons .book,.buttons .checked,.buttons .pending,.buttons .rejected,.buttons .folder,.buttons .acte,.buttons .bienlibre,.buttons .bienaffecte,.buttons .operation,.buttons .folderoperation,.buttons .favoris,.buttons .noimg {
+   margin-right:-13px;
+}
+
+@media print {
+.buttons {
+   	visibility:hidden;display:none; 
+}
+.ecriture, .ecritureDossier, .house,.accept,.group,.cheque,.database_edit,.word,.search,.virement,.application_view_list,.chart_bar,.coins,.database_add,.money,.chart_pie,.roles,.database_delete,.exclamation,.database_save,.database_table,.xls,.shield,.information,.basket_edit,.book,.checked,.pending,.rejected,.folder,.dossier,.acte,.bienlibre, .bienaffecte, .bien,.operation,.folderoperation ,.favoris ,.noimg {
+   	visibility:hidden;display:none; 
+}
+}

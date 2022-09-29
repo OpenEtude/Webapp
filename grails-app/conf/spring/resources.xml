@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+  <bean id="mailSender"
+  class="org.springframework.mail.javamail.JavaMailSenderImpl">
+    <property name="host" value="email-smtp.eu-west-1.amazonaws.com" />
+    <property name="port" value="587" />
+    <property name="protocol" value="smtp" />
+    <property name="username" value="null@apps.arkilog.ma" />
+    <property name="password" value="secret" />
+    <property name="javaMailProperties">
+      <props>
+        <prop key="mail.transport.protocol">smtp</prop>
+        <prop key="mail.smtp.starttls.enable">true</prop>
+        <prop key="mail.smtp.auth">true</prop>
+      </props>
+    </property>
+  </bean>
+  <!-- You can set default email bean properties here, eg: from/to/subject -->
+  <bean id="mailMessage"
+  class="org.springframework.mail.SimpleMailMessage">
+    <property name="from">
+      <value>"Gestion de Cabinet"&lt;null@apps.arkilog.ma&gt;</value>
+    </property>
+  </bean>
+	<bean id="mailPropertiesBean" class="MailPropertiesBean">
+		<property name="from">
+		  <value>"Gestion de Cabinet"&lt;null@apps.arkilog.ma&gt;</value>
+		</property>
+	</bean>
+</beans>

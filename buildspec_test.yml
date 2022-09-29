@@ -1,0 +1,12 @@
+version: 0.2
+env:
+  variables:
+    DOCKER_DRIVER: overlay
+    GRAILS_VERSION: 1.3.8
+    ETUDE_VERSION: 1.0.0
+    REPOSITORY_URI: 754835769352.dkr.ecr.eu-central-1.amazonaws.com
+    JAVA_OPTS: -Dstringchararrayaccessor.disabled=true
+phases:
+  build:
+    commands:
+      - chmod +x ./build.sh

@@ -1,0 +1,658 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 4vw;
+        overflow-x: hidden !important;
+        text-wrap: normal;
+    }
+
+    #menuToggle {
+        display: block;
+        margin:4vw;
+        margin-left:1vw;
+        z-index: 9999999;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width:10vw;
+        height:10vw;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0; /* hide this */
+        z-index: 99999999; /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+        margin-top: -0.4em;
+        margin-left: 0.8em;
+    }
+
+    #leftmenu {
+        background-color: #e0e0e0;
+        border-right: 1px solid #aaa;
+        width: 80vw;
+        height: auto;
+    }
+
+    #leftmenu a, #leftmenu a:link, #leftmenu a:visited {
+        white-space: nowrap;
+        display: block;
+        height: 5vw;
+        font-size: 4vw;
+        font-weight: normal;
+        text-shadow: none;
+        color: #000;
+        padding: 0.05rem;
+        vertical-align: middle;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+
+    #leftmenu a.selected, #leftmenu a:hover {
+        white-space: nowrap;
+        background: -moz-linear-gradient(top, #bbb, #777);
+        background: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#777));
+        text-decoration: none;
+    }
+
+    /*
+     * Just a quick hamburger
+     */
+    #menuToggle i {
+        visibility: visible;
+        display: block;
+        width:12vw;
+        height:1vw;
+        margin:2vw;
+        border-radius:0.25vw;
+        position: relative;
+        background: #ffffff;
+        z-index: 9999999;
+        transform-origin: 0px 0px;
+        transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menuToggle i:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle i:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /*
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menuToggle input:checked ~ i {
+        opacity: 1;
+        background: #232323;
+        transform:rotate(45deg) translate(2vw, 2vw);
+        width:6vw;
+        margin-left:4vw;
+        top:-2vw;
+    }
+
+    /*
+     * But let's hide the middle one.
+     */
+    #menuToggle input:checked ~ i:nth-last-child(4) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ i:nth-last-child(3) {
+        opacity: 1;
+        transform:rotate(-45deg) translate(-1.3vw, 0.5vw);
+        background: #232323;
+    }
+
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menuToggle input:checked ~ i:nth-last-child(2) {
+        transform: rotate(-45deg) translate(-0.3rem, -0.3rem);
+    }
+
+    /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+    #leftmenu {
+        position: absolute;
+        margin: -13vw 0 0 -1vw;
+        padding-left: 1vw;
+        padding-top: 20vw;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        z-index: 99999;
+    }
+
+    .searchcontainer .yui-ac-content li {
+        cursor: default;
+        white-space: nowrap;
+        font-size: 4vw;
+        width: 100%;
+        margin: 0 !important;
+        padding: 1vw;
+    }
+
+    /*
+     * And let's slide it in from the left
+     */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    div.logo {
+        margin-left: 17vw;
+        margin-top: -10.5vw;
+    }
+
+    #appname a {
+        font-size: 4vw;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .list th, .list td {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        overflow: hidden;
+        border: none;
+        font-size: 3.5vw;
+        padding: 1vw;
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
+        height: auto;
+    }
+
+    .list th:first-child, .list td:first-child {
+        padding: 0.1rem;
+    }
+
+    .list td span, .list th span {
+        font-size: 3.5vw;
+    }
+
+    .list td span.tip {
+        display: block;
+        width: 100%;
+        overflow: auto;
+        text-wrap: normal;
+    }
+
+    .list tr td:last-child {
+        border-bottom: 1px solid #aaa;
+    }
+
+    .list table tr:last-child td:last-child {
+        border-bottom: none;
+    }
+
+    #maincontent .nav, #maincontent div.body h1, #maincontent {
+        margin-left: 0px;
+    }
+
+    #maincontent div.body h1, #maincontent {
+        width: auto;
+    }
+
+    thead {
+        visibility: hidden;
+        display: none;
+    }
+
+    input.search, #keybox, #keybox_main {
+        width: 100%;
+        height: 9vw !important;
+        font-size: 5vw !important;
+    }
+
+    #keybox {
+        margin-top: 18vw;
+        margin-bottom: -12vw;
+        position: relative;
+    }
+
+    #headerback {
+        height: 8rem;
+    }
+
+    #maincontent div.body {
+        margin-top: 2.5rem !important;
+    }
+
+    div.page *, #MB_caption, #MB_close span {
+        font-size: 3.5vw;
+        line-height: 1;
+    }
+    #MB_close span {
+      font-size: 6vw;
+    }
+    h3 {
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: 1vw;
+    }
+
+    a.num {
+        padding: 2rem;
+    }
+
+    .menuButton {
+        display: inline-block;
+        margin-top: 0.2rem;
+    }
+
+    div.nav span.menuButton a {
+        padding: 1vw;
+        margin-top: 8vw;
+    }
+
+    select, input[type="text"], input[type="password"] {
+        height: 2rem;
+        font-size: 3.5vw;
+        width: 100% !important;
+    }
+
+    .dialog.setting {
+        overflow-x: auto;
+    }
+
+    .dialog.setting td, #loginBox td {
+        display: block;
+        border: none;
+    }
+
+    .dialog.setting td {
+        width: auto !important;
+    }
+
+    .dialog.setting label {
+        line-height: 1 !important;
+        margin: 0.3rem !important;
+        text-align: left !important;
+    }
+
+    input[class="button"], button, input[type="submit"] {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        height: 3em;
+        font-size: 4vw;
+        width: 100%;
+        display: block;
+    }
+
+    ul.tabs li.tab a, #MB_caption {
+        padding: 0.6rem;
+    }
+
+    #header {
+        border-bottom: none;
+        height: 16vw;
+    }
+
+    div.nav {
+        margin-top: 0vw !important;
+        background: rgba(237, 237, 237, 0.12);
+        background: -moz-linear-gradient(left, rgba(237, 237, 237, 0.12) 0%, rgba(246, 246, 246, 0.71) 71%, rgba(0, 0, 0, 0.16) 91%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237, 237, 237, 0.12)), color-stop(71%, rgba(246, 246, 246, 0.71)), color-stop(91%, rgba(0, 0, 0, 0.16)));
+        background: -webkit-linear-gradient(left, rgba(237, 237, 237, 0.12) 0%, rgba(246, 246, 246, 0.71) 71%, rgba(0, 0, 0, 0.16) 91%);
+        background: -o-linear-gradient(left, rgba(237, 237, 237, 0.12) 0%, rgba(246, 246, 246, 0.71) 71%, rgba(0, 0, 0, 0.16) 91%);
+        background: -ms-linear-gradient(left, rgba(237, 237, 237, 0.12) 0%, rgba(246, 246, 246, 0.71) 71%, rgba(0, 0, 0, 0.16) 91%);
+        background: linear-gradient(to right, rgba(237, 237, 237, 0.12) 0%, rgba(246, 246, 246, 0.71) 71%, rgba(0, 0, 0, 0.16) 91%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#000000', GradientType=1);
+        background-color: white;
+        padding-left:1vw;
+        height:10vw;
+    }
+
+    div.nav, h1 {
+        overflow-x: scroll;
+    }
+
+    div.dialog {
+        overflow-x: hidden;
+        border-radius: unset;
+    }
+
+    td.name {
+        line-height: 1 !important;
+    }
+
+    h1 {
+        font-size: 4vw !important;
+        font-weight: bold;
+        margin-top: -9.5vw;
+        margin-left: 3vw !important;
+    }
+
+    button.favadd {
+        margin-top: 2vw;
+        margin-left: 3vw;
+        margin-bottom:1vw !important;
+    }
+
+    .searchonheader {
+        top:0;
+        right:3vw;
+        position:absolute;
+        margin-top:0;
+        margin-right:0;
+        height:auto;
+        padding:0 !important;
+        margin-bottom:0;
+    }
+    .searchicon{
+        height:15vw;
+        width:15vw;
+        border-radius:1vw;
+        margin:2vw auto;
+        position:relative;
+    }
+    .searchonheader > input ~ .searchbox input {
+        visibility: hidden;
+    }
+
+    .searchonheader > input:checked ~ .searchbox input {
+        visibility: visible;
+    }
+
+    .searchonheader > input:checked ~ .searchbox {
+        margin-top: 1rem;
+        transform: none;
+        opacity: 1;
+    }
+
+    .searchonheader > input ~ .searchicon {
+        display: block;
+        line-height: 1;
+    }
+
+    .searchonheader > input:checked ~ .searchicon {
+        opacity: 0.3;
+    }
+
+
+    .searchonheader > input:checked ~ .searchbox {
+        position: absolute;
+        background-color: gray;
+        vertical-align: middle;
+        padding-bottom: 0;
+        height: 11vw;
+        width:100vw;
+        left:-82vw !important;
+        padding-top:2vw;
+        top:11vw !important;
+    }
+
+    .homegrid td {
+        display: block;
+        width: 100%;
+    }
+
+    .dialog input, .dialog textarea, .dialog select {
+        width: 95% !important;
+        font-size: 3.5vw;
+    }
+
+    .prop .value, .prop .name {
+        text-align: left;
+        width: 100%;
+        white-space: normal;
+        display: block;
+        font-size: 3.5vw;
+        margin: 0;
+        padding: 0;
+
+    }
+    td.checkfix input[type="text"]{
+        font-size: 3.5vw;
+        width:auto !important;
+        height:6vw;
+    }
+    .menuButton a.selectall, .menuButton a.selectnone{
+        font-size: 3.5vw;
+        padding: 5vw;
+        display: block;
+    }
+    td.mywidget {
+        height: auto;
+        margin-bottom: 4vw;
+        margin-left: 0;
+    }
+
+    div.paginateButtons {
+        overflow-x: scroll;
+    }
+    div.list td.moneyCell.credit, div.list th.moneyCell.credit, div.list th.moneySummaryCell.credit {
+        text-align: right;
+        color: forestgreen;
+        display: block;
+        width: auto;
+    }
+
+    div.list td.moneyCell.debit, div.list th.moneyCell.debit, div.list th.moneySummaryCell.debit {
+        text-align: right;
+        color: orangered;
+        display: block;
+        width: auto;
+        padding-right: 8vw;
+    }
+
+    div.list th.moneySummaryCell.credit .normal,div.list th.moneySummaryCell.debit .normal{
+        color: black;
+    }
+    .left{
+        float: left;
+        text-align: left;
+    }
+    td.valeur:before {
+        content: "Dép. :";
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+
+    td.mouvement:before {
+        content: "Enc. : ";
+        font-size: 3.5vw;
+        font-weight: bold;
+    }
+
+    .linktip a, .linktip a ~ span.tip {
+        width: 100%;
+        height: auto;
+        font-size: 3.5vw;
+        line-height: 1;
+        padding-right: 5vw;
+        padding-bottom: 3vw !important;
+        display:inline-block;
+    }
+    .linktip a ~ span.tip {
+        display:table-cell;
+        padding-top:1vw;
+    }
+
+    #maincontent, #header, table, tr, div.body, body {
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    div.body, body {
+        overflow-y: auto;
+    }
+
+    .linktip {
+        height:auto !important;
+    }
+
+    div.prey {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    td.icon {
+        height: 20px;
+    }
+
+    td.icon:last-child {
+        text-align: right;
+        display: inline-table;
+    }
+
+    td.noval {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    .tiny{
+        font-size: 3.5vw;
+    }
+    .moneyCell, .list th.moneyCell {
+        font-size: 3.5vw !important;
+        text-align: right;
+        display:block;
+        width:auto;
+        font-weight: bold;
+    }
+
+    div.databar {
+        height: 5vw;
+        text-align: right;
+        margin-top: 0;
+        padding: 0;
+        padding-right: 10vw;
+        line-height: 1;
+        font-size: 3vw;
+        padding-bottom: 2vw;
+        display: block;
+        width: auto;
+    }
+    .pack a, .pack a.modal, .pack input[type="submit"].link{
+        font-size: 3vw;
+        text-shadow: none;
+    }
+    .databar a, .databar form input, .databar input {
+        font-size: 3vw;
+        width: auto;
+        margin-top: -4vw !important;
+        display: inline;
+        height: 5vw;
+        text-transform: uppercase;
+        font-weight: bold !important;
+        text-shadow: none !important;
+        color: black !important;
+    }
+
+    .databar form input {
+        display: table-footer-group;
+        background-color: red;
+        width: 12vw !important;
+        visibility: visible;
+        margin-top: 0 !important;
+        position: relative;
+        margin-left: 50%;
+    }
+
+    .prop .value {
+
+        padding-left: 3vw;
+        padding-bottom: 4vw;
+
+    }
+
+    .danger.topright {
+        width: 7vw;
+        height: 7vw;
+        padding: 1vw;
+        float: right;
+        margin-top: -5.9vw;
+    }
+    .moneyCell.credit.noval{
+        visibility: hidden !important;
+        display: none !important;
+    }
+    .mywidget li{
+        display:block;
+        line-height:1;
+        height:auto;
+        margin-bottom:7vw;
+    }
+    .tag{
+        padding-top: 0.2vw;
+        padding-bottom: 0.2vw;
+    }
+    .searchonheader input{
+        margin-top:4vw;
+        width:10vw;
+        height:10vw;
+    }
+    .dialog ul{
+        padding-left: 0;
+    }
+    .dialog ul.tabs {
+        overflow-x: scroll;
+        width: auto;
+        display:inline-block;
+        overflow-y:visible;
+    }
+    #MB_overlay ~ #header #menuToggle,#MB_overlay ~ #header .searchonheader,#MB_overlay ~ #header .nav {
+        visibility: hidden;
+        display: none;
+    }
+    .oplink{
+        margin-left:auto;
+        margin-right:0;
+        right:0;
+        left:auto;top:auto;height:0.0em;width:5em;top:0px;margin-top:-2em;margin-bottom:0em;
+    }
+    input.autocomplete{
+        font-size:5vw;
+        height:9vw !important;
+    }
+    #keybox.autocomplete{
+        margin-bottom: -1vw;
+        margin-top: 2vw;
+    }
+    #lastDossiersDiv,#lastEcrituresDossierDiv,#lastEcrituresDiv,#lastActesDiv{
+        height: auto;
+        display: block;
+    }
+    .mywidgetcontent > p:last-child,.mywidgetcontent > .highlightedFeature:last-child{
+        float: none;
+    }
+    .nomobile{
+        display: none;
+        visibility: hidden;
+    }
+    #loginBox.dialog{
+        width: 100%;
+        margin-top: 4rem;
+        width: 100%;
+    }
+    #loginBox h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    #loginButton,#loginButton:hover{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        height: 4rem;
+        padding: 0.7rem;
+        text-shadow: none;
+        color: white;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

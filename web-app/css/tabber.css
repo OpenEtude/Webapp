@@ -1,0 +1,109 @@
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+.tabberlive {
+ margin-top:1em;
+}
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav
+{
+ margin:0;
+ padding: 3px 0;
+}
+
+ul.tabbernav li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+
+ul.tabbernav li a
+{
+ padding: 3px 0.5em;
+ margin-left: 3px;
+ background: #ddd;
+ text-decoration: none;
+ border-radius: 0.50em 0.50em 0em 0em;-moz-border-radius: 0.50em 0.50em 0em 0em;-webkit-border-radius: 0.50em 0.50em 0em 0em;padding: 5px;
+}
+
+ul.tabbernav li a:link { color: #aaa; }
+ul.tabbernav li a:visited { color: #666; }
+
+ul.tabbernav li a:hover
+{
+ color: #fff;
+ background: #666;
+ text-shadow:-1px -1px 0 #000;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #bbb;
+ color: #000;
+ font-style:bold;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+	text-shadow:1px 1px 0 #FFF;
+	cursor:default;
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+.tabberlive .tabbertab {
+ margin-top:0.8em;
+ padding:10px;
+ padding-top:40px;
+ border-radius: 0.50em;-moz-border-radius: 0.50em;-webkit-border-radius: 0.50em;
+ background-color:#f3f3f3;
+ border:1px solid #ccc;
+ border-top:4px solid #bbb;
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+}
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+/*fix for 1.1.1*/
+ul.tabbernav{line-height:2em;margin:0px;padding:0 0;}
+ul.tabbernav li{padding:0px;}
+.dialog ul.tabbernav li{padding:0;margin:0;}
+.tabberlive .tabbertab{margin:0;margin-top:0;}
+
+@media print {
+.tabbernav {
+ display:none;
+}
+}

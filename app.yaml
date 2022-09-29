@@ -1,0 +1,15 @@
+runtime: custom
+env: flex
+env_variables:
+  ETUDE_DB_NAME: "etude"
+  ETUDE_DB_REGION: "europe-west3"
+  ETUDE_DB_ENVIRONNMENT: "dev"
+  ETUDE_DB_USERNAME: "postgres"
+  ETUDE_DB_PASSWORD: "nidma"
+manual_scaling:
+  instances: 1
+resources:
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.05
