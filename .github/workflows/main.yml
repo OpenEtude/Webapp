@@ -72,7 +72,7 @@ jobs:
         run: |
           chmod +x ./build.sh
           ./build.sh
-        shell: bash
+        shell: "bash -ilc {0}"
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
