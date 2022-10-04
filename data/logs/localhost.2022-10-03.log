@@ -1,0 +1,360 @@
+oct. 03, 2022 7:02:21 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 03, 2022 7:02:24 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at com.sun.proxy.$Proxy7.getMetaData(Unknown Source)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:580)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 12 more
+
+oct. 03, 2022 7:02:24 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at com.sun.proxy.$Proxy7.getMetaData(Unknown Source)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:580)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 12 more
+
+oct. 03, 2022 7:03:56 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 03, 2022 7:03:59 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at com.sun.proxy.$Proxy7.getMetaData(Unknown Source)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:580)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 12 more
+
+oct. 03, 2022 7:03:59 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'messageSource': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionManager': Cannot resolve reference to bean 'sessionFactory' while setting bean property 'sessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory': Cannot resolve reference to bean 'lobHandlerDetector' while setting bean property 'lobHandler'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'lobHandlerDetector': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Error while extracting DatabaseMetaData; nested exception is org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	... 5 more
+Caused by: org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:280)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:195)
+	at org.postgresql.Driver.makeConnection(Driver.java:454)
+	at org.postgresql.Driver.connect(Driver.java:256)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:187)
+	at com.sun.proxy.$Proxy7.getMetaData(Unknown Source)
+	... 5 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:580)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:70)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:91)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:192)
+	... 12 more
+
+oct. 03, 2022 7:06:25 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 03, 2022 7:06:32 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$d751e557.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 03, 2022 7:06:32 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$d751e557.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 03, 2022 7:09:21 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 03, 2022 7:09:30 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$ad7a20f9.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 03, 2022 7:09:31 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$ad7a20f9.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 03, 2022 7:10:16 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 03, 2022 7:10:23 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$38ebf974.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 03, 2022 7:10:23 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$38ebf974.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f204f896-e785-4912-9de3-fc976cf524a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-prod.yml" afterPath="$PROJECT_DIR$/docker-compose-prod.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -695,7 +694,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664371806466</updated>
       <workItem from="1664371807742" duration="470000" />
-      <workItem from="1664372298271" duration="25805000" />
+      <workItem from="1664372298271" duration="25900000" />
     </task>
     <task id="LOCAL-00001" summary="Bugfix atempt">
       <created>1664470543292</created>
@@ -830,11 +829,18 @@
       <option name="project" value="LOCAL" />
       <updated>1664898174388</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Bugfix atempt">
+      <created>1664899251687</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1664899251687</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26275000" />
+    <option name="totallyTimeSpent" value="26370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2418" height="1318" extended-state="6" />

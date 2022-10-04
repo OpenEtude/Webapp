@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13395</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="information_schema">
+      <ObjectId>13111</ObjectId>
+    </schema>
+    <sequence id="7" parent="3" name="seq_acte">
+      <ObjectId>24712</ObjectId>
+      <StateNumber>745</StateNumber>
+    </sequence>
+    <sequence id="8" parent="3" name="seq_activity">
+      <ObjectId>24714</ObjectId>
+      <StateNumber>746</StateNumber>
+    </sequence>
+    <sequence id="9" parent="3" name="seq_bien">
+      <ObjectId>24716</ObjectId>
+      <StateNumber>747</StateNumber>
+    </sequence>
+    <sequence id="10" parent="3" name="seq_categorie_ecriture">
+      <ObjectId>24718</ObjectId>
+      <StateNumber>748</StateNumber>
+    </sequence>
+    <sequence id="11" parent="3" name="seq_champ">
+      <ObjectId>24720</ObjectId>
+      <StateNumber>749</StateNumber>
+    </sequence>
+    <sequence id="12" parent="3" name="seq_civilite">
+      <ObjectId>24722</ObjectId>
+      <StateNumber>750</StateNumber>
+    </sequence>
+    <sequence id="13" parent="3" name="seq_client">
+      <ObjectId>24724</ObjectId>
+      <StateNumber>751</StateNumber>
+    </sequence>
+    <sequence id="14" parent="3" name="seq_compte">
+      <ObjectId>24726</ObjectId>
+      <StateNumber>752</StateNumber>
+    </sequence>
+    <sequence id="15" parent="3" name="seq_compte_bancaire">
+      <ObjectId>24728</ObjectId>
+      <StateNumber>753</StateNumber>
+    </sequence>
+    <sequence id="16" parent="3" name="seq_database_patch">
+      <ObjectId>24730</ObjectId>
+      <StateNumber>754</StateNumber>
+    </sequence>
+    <sequence id="17" parent="3" name="seq_dossier">
+      <ObjectId>24732</ObjectId>
+      <StateNumber>755</StateNumber>
+    </sequence>
+    <sequence id="18" parent="3" name="seq_ecriture">
+      <ObjectId>24734</ObjectId>
+      <StateNumber>756</StateNumber>
+    </sequence>
+    <sequence id="19" parent="3" name="seq_etat_ecriture">
+      <ObjectId>24736</ObjectId>
+      <StateNumber>757</StateNumber>
+    </sequence>
+    <sequence id="20" parent="3" name="seq_groupement">
+      <ObjectId>24738</ObjectId>
+      <StateNumber>758</StateNumber>
+    </sequence>
+    <sequence id="21" parent="3" name="seq_jsec_permission">
+      <ObjectId>24740</ObjectId>
+      <StateNumber>759</StateNumber>
+    </sequence>
+    <sequence id="22" parent="3" name="seq_jsec_role">
+      <ObjectId>24742</ObjectId>
+      <StateNumber>760</StateNumber>
+    </sequence>
+    <sequence id="23" parent="3" name="seq_jsec_role_permission_rel">
+      <ObjectId>24744</ObjectId>
+      <StateNumber>761</StateNumber>
+    </sequence>
+    <sequence id="24" parent="3" name="seq_jsec_user">
+      <ObjectId>24746</ObjectId>
+      <StateNumber>762</StateNumber>
+    </sequence>
+    <sequence id="25" parent="3" name="seq_jsec_user_permission_rel">
+      <ObjectId>24748</ObjectId>
+      <StateNumber>763</StateNumber>
+    </sequence>
+    <sequence id="26" parent="3" name="seq_jsec_user_role_rel">
+      <ObjectId>24750</ObjectId>
+      <StateNumber>764</StateNumber>
+    </sequence>
+    <sequence id="27" parent="3" name="seq_moyen_paiement">
+      <ObjectId>24752</ObjectId>
+      <StateNumber>765</StateNumber>
+    </sequence>
+    <sequence id="28" parent="3" name="seq_operation">
+      <ObjectId>24754</ObjectId>
+      <StateNumber>766</StateNumber>
+    </sequence>
+    <sequence id="29" parent="3" name="seq_piece_identite">
+      <ObjectId>24756</ObjectId>
+      <StateNumber>767</StateNumber>
+    </sequence>
+    <sequence id="30" parent="3" name="seq_setting">
+      <ObjectId>24758</ObjectId>
+      <StateNumber>768</StateNumber>
+    </sequence>
+    <sequence id="31" parent="3" name="seq_software_update">
+      <ObjectId>24760</ObjectId>
+      <StateNumber>769</StateNumber>
+    </sequence>
+    <sequence id="32" parent="3" name="seq_tag_links">
+      <ObjectId>24762</ObjectId>
+      <StateNumber>770</StateNumber>
+    </sequence>
+    <sequence id="33" parent="3" name="seq_tags">
+      <ObjectId>24764</ObjectId>
+      <StateNumber>771</StateNumber>
+    </sequence>
+    <sequence id="34" parent="3" name="seq_traduction">
+      <ObjectId>24766</ObjectId>
+      <StateNumber>772</StateNumber>
+    </sequence>
+    <sequence id="35" parent="3" name="seq_type_de_bien">
+      <ObjectId>24768</ObjectId>
+      <StateNumber>773</StateNumber>
+    </sequence>
+    <sequence id="36" parent="3" name="seq_type_ecriture">
+      <ObjectId>24770</ObjectId>
+      <StateNumber>774</StateNumber>
+    </sequence>
+    <sequence id="37" parent="3" name="seq_type_ecriture_groupement_rel">
+      <ObjectId>24772</ObjectId>
+      <StateNumber>775</StateNumber>
+    </sequence>
+    <sequence id="38" parent="3" name="seq_valeur">
+      <ObjectId>24774</ObjectId>
+      <StateNumber>776</StateNumber>
+    </sequence>
+  </database-model>
+</dataSource>

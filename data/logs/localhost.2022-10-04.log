@@ -1,0 +1,202 @@
+oct. 04, 2022 12:28:26 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 04, 2022 12:28:32 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$a4df84ed.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 04, 2022 12:28:32 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$a4df84ed.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 04, 2022 4:30:12 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 04, 2022 4:30:20 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$6f80bad6.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 04, 2022 4:30:20 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ArrayIndexOutOfBoundsException: 2
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: 2
+	at BootStrapService.versionMap(BootStrapService.groovy:48)
+	at BootStrapService$versionMap.callCurrent(Unknown Source)
+	at BootStrapService.patch(BootStrapService.groovy:18)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$6f80bad6.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 04, 2022 4:38:48 PM org.apache.catalina.core.ApplicationContext log
+INFOS: Initializing Spring root WebApplicationContext
+oct. 04, 2022 4:38:54 PM org.apache.catalina.core.StandardContext listenerStart
+GRAVE: Exception sending context initialized event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.String
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.String
+	at java.lang.String.compareTo(String.java:108)
+	at BootStrapService.patch(BootStrapService.groovy:22)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$43e4f04.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+
+oct. 04, 2022 4:38:54 PM org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class org.codehaus.groovy.grails.web.context.GrailsContextLoaderListener
+org.springframework.beans.factory.access.BootstrapException: Error executing bootstraps; nested exception is java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.String
+	at org.codehaus.groovy.grails.web.context.GrailsContextLoader.createWebApplicationContext(GrailsContextLoader.java:87)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:197)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:47)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5197)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5720)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1018)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:994)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1296)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:2038)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.String
+	at java.lang.String.compareTo(String.java:108)
+	at BootStrapService.patch(BootStrapService.groovy:22)
+	at BootStrapService$$FastClassByCGLIB$$5923b0a7.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at BootStrapService$$EnhancerByCGLIB$$43e4f04.patch(<generated>)
+	at ApplicationBootStrap$_closure1_closure3.doCall(ApplicationBootStrap.groovy:12)
+	at ApplicationBootStrap$_closure1.doCall(ApplicationBootStrap.groovy:10)
+	at grails.util.Environment.evaluateEnvironmentSpecificBlock(Environment.java:251)
+	at grails.util.Environment.executeForEnvironment(Environment.java:244)
+	at grails.util.Environment.executeForCurrentEnvironment(Environment.java:220)
+	... 5 more
+

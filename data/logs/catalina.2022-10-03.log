@@ -1,0 +1,264 @@
+oct. 03, 2022 7:02:19 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:02:19 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:02:20 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:02:20 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 362 ms
+oct. 03, 2022 7:02:20 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Starting service Catalina
+oct. 03, 2022 7:02:20 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.94
+oct. 03, 2022 7:02:20 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deploying web application directory /usr/local/tomcat/webapps/ROOT
+oct. 03, 2022 7:02:24 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: One or more listeners failed to start. Full details will be found in the appropriate container log file
+oct. 03, 2022 7:02:24 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Context [] startup failed due to previous errors
+oct. 03, 2022 7:02:24 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+GRAVE: The web application [] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+oct. 03, 2022 7:02:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /usr/local/tomcat/webapps/ROOT has finished in 4,750 ms
+oct. 03, 2022 7:02:24 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:02:24 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 4780 ms
+oct. 03, 2022 7:03:46 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:03:47 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Stopping service Catalina
+oct. 03, 2022 7:03:47 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:03:47 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:03:54 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:03:54 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:03:54 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:03:54 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 338 ms
+oct. 03, 2022 7:03:54 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Starting service Catalina
+oct. 03, 2022 7:03:54 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.94
+oct. 03, 2022 7:03:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deploying web application directory /usr/local/tomcat/webapps/ROOT
+oct. 03, 2022 7:03:59 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: One or more listeners failed to start. Full details will be found in the appropriate container log file
+oct. 03, 2022 7:03:59 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Context [] startup failed due to previous errors
+oct. 03, 2022 7:03:59 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+GRAVE: The web application [] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+oct. 03, 2022 7:03:59 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /usr/local/tomcat/webapps/ROOT has finished in 4,795 ms
+oct. 03, 2022 7:03:59 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:03:59 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 4824 ms
+oct. 03, 2022 7:06:14 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:06:15 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Stopping service Catalina
+oct. 03, 2022 7:06:15 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:06:15 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:06:24 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:06:24 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:06:24 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:06:24 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 342 ms
+oct. 03, 2022 7:06:24 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Starting service Catalina
+oct. 03, 2022 7:06:24 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.94
+oct. 03, 2022 7:06:24 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deploying web application directory /usr/local/tomcat/webapps/ROOT
+oct. 03, 2022 7:06:32 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: One or more listeners failed to start. Full details will be found in the appropriate container log file
+oct. 03, 2022 7:06:32 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Context [] startup failed due to previous errors
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+GRAVE: The web application [] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [net.sf.ehcache.CacheManager@27b786f2] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecRolePermissionRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store Traduction Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store Setting Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecRole Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.grails.taggable.Tag Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUser Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecPermission Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.grails.taggable.TagLink Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUserRoleRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUserPermissionRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.hibernate.cache.UpdateTimestampsCache Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.hibernate.cache.StandardQueryCache Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [quartzScheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [quartzScheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [net.sf.ehcache.CacheManager@5f425e6e] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.jsecurity.realm.text.PropertiesRealm-0-accounts Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:06:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /usr/local/tomcat/webapps/ROOT has finished in 7,592 ms
+oct. 03, 2022 7:06:32 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:06:32 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 7619 ms
+oct. 03, 2022 7:09:12 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:09:13 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Stopping service Catalina
+oct. 03, 2022 7:09:13 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:09:13 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:09:20 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:09:20 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:09:20 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:09:20 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 369 ms
+oct. 03, 2022 7:09:20 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Starting service Catalina
+oct. 03, 2022 7:09:20 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.94
+oct. 03, 2022 7:09:20 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deploying web application directory /usr/local/tomcat/webapps/ROOT
+oct. 03, 2022 7:09:30 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: One or more listeners failed to start. Full details will be found in the appropriate container log file
+oct. 03, 2022 7:09:30 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Context [] startup failed due to previous errors
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+GRAVE: The web application [] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [net.sf.ehcache.CacheManager@165fbab8] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecRolePermissionRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store Traduction Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store Setting Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecRole Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.grails.taggable.Tag Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUser Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecPermission Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.grails.taggable.TagLink Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUserRoleRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUserPermissionRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.hibernate.cache.UpdateTimestampsCache Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.hibernate.cache.StandardQueryCache Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [quartzScheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [quartzScheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [net.sf.ehcache.CacheManager@7ec08144] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.jsecurity.realm.text.PropertiesRealm-0-accounts Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:09:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /usr/local/tomcat/webapps/ROOT has finished in 10,441 ms
+oct. 03, 2022 7:09:31 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:09:31 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 10471 ms
+oct. 03, 2022 7:10:06 PM org.apache.coyote.AbstractProtocol pause
+INFOS: Pausing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:10:07 PM org.apache.catalina.core.StandardService stopInternal
+INFOS: Stopping service Catalina
+oct. 03, 2022 7:10:07 PM org.apache.coyote.AbstractProtocol stop
+INFOS: Stopping ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:10:07 PM org.apache.coyote.AbstractProtocol destroy
+INFOS: Destroying ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:10:14 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:10:14 PM org.apache.catalina.startup.Catalina addClusterRuleSet
+INFOS: Cluster RuleSet not found due to [java.lang.ClassNotFoundException: org.apache.catalina.ha.ClusterRuleSet]. Cluster configuration disabled.
+oct. 03, 2022 7:10:15 PM org.apache.coyote.AbstractProtocol init
+INFOS: Initializing ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:10:15 PM org.apache.catalina.startup.Catalina load
+INFOS: Initialization processed in 344 ms
+oct. 03, 2022 7:10:15 PM org.apache.catalina.core.StandardService startInternal
+INFOS: Starting service Catalina
+oct. 03, 2022 7:10:15 PM org.apache.catalina.core.StandardEngine startInternal
+INFOS: Starting Servlet Engine: Apache Tomcat/7.0.94
+oct. 03, 2022 7:10:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deploying web application directory /usr/local/tomcat/webapps/ROOT
+oct. 03, 2022 7:10:23 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: One or more listeners failed to start. Full details will be found in the appropriate container log file
+oct. 03, 2022 7:10:23 PM org.apache.catalina.core.StandardContext startInternal
+GRAVE: Context [] startup failed due to previous errors
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+GRAVE: The web application [] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [net.sf.ehcache.CacheManager@142d2f7b] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecRolePermissionRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store Traduction Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store Setting Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecRole Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.grails.taggable.Tag Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUser Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecPermission Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.grails.taggable.TagLink Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUserRoleRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store JsecUserPermissionRel Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.hibernate.cache.UpdateTimestampsCache Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.hibernate.cache.StandardQueryCache Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [quartzScheduler_Worker-1] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [quartzScheduler_Worker-2] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [net.sf.ehcache.CacheManager@50074d62] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+GRAVE: The web application [] appears to have started a thread named [Store org.jsecurity.realm.text.PropertiesRealm-0-accounts Spool Thread] but has failed to stop it. This is very likely to create a memory leak.
+oct. 03, 2022 7:10:23 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFOS: Deployment of web application directory /usr/local/tomcat/webapps/ROOT has finished in 8,535 ms
+oct. 03, 2022 7:10:23 PM org.apache.coyote.AbstractProtocol start
+INFOS: Starting ProtocolHandler ["http-bio-8080"]
+oct. 03, 2022 7:10:23 PM org.apache.catalina.startup.Catalina start
+INFOS: Server startup in 8565 ms
