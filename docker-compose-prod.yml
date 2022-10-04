@@ -1,0 +1,52 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:13.1
+    restart: always
+    ports:
+      - "5438:5432"
+    environment:
+      POSTGRES_USER: etude
+      POSTGRES_PASSWORD: etude
+    networks:
+      default:
+  pgweb:
+    container_name: pgweb
+    restart: always
+    image: sosedoff/pgweb
+    ports:
+      - "8088:8081"
+    links:
+      - postgres:postgres  # my database container is called postgres, not db
+    environment:
+      - DATABASE_URL=postgres://etude:etude@postgres:5432/etude?sslmode=disable
+    depends_on:
+      - postgres
+    networks:
+      default:
+  etude:
+    restart: always
+    image: ghcr.io/openetude/webapp:main
+    container_name: etude
+    links:
+      - postgres:postgres  # my database container is called postgres, not db
+    ports:
+      - "9999:8080"
+    environment:
+      RDS_HOSTNAME: "postgres"
+      RDS_PORT: "5432"
+      RDS_DB_NAME: "etude"
+      RDS_USERNAME: "etude"
+      RDS_PASSWORD: "etude"
+    volumes:
+        - ${PWD}/data/logs:/usr/local/tomcat/logs/
+        - ${PWD}/data/work:/usr/local/tomcat/work/
+        - ${PWD}/data/temp:/usr/local/tomcat/temp/
+        - ${PWD}/data/systmp:/tmp/
+        - ${PWD}/data/.java:/root/.java/
+        - ${PWD}/data/backup:/root/arkilogbackup/
+        - ${PWD}/data/tasks:/home/etude/tasks/
+        - ${PWD}/data/database:/home/etude/database/
+    networks:
+      default:
