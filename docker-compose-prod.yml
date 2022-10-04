@@ -27,7 +27,7 @@ services:
       default:
   etude:
     restart: always
-    image: ghcr.io/openetude/webapp:main
+    image: ghcr.io/openetude/webapp:22.3
     container_name: etude
     links:
       - postgres:postgres  # my database container is called postgres, not db

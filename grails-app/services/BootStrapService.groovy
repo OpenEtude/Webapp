@@ -47,9 +47,9 @@ class BootStrapService {
 
     def versionMap(appVersion) {
         def appVersionArray = appVersion?.split("\\.")
-        return [majorVersion: _l(appVersionArray.size() > 0 ? appVersionArray[0] : 0l),
-                midVersion  : _l(appVersionArray.size() > 1 ? appVersionArray[1] : 0l),
-                minorVersion: _l(appVersionArray.size() > 2 ? appVersionArray[2] : 0l)]
+        return [majorVersion: _l(appVersionArray.size() > 0 ? appVersionArray[0] : "0"),
+                midVersion  : _l(appVersionArray.size() > 1 ? appVersionArray[1] : "0"),
+                minorVersion: _l(appVersionArray.size() > 2 ? appVersionArray[2] : "0")]
     }
 
     def execDdl(sql) { dataSource.connection.prepareStatement(sql).executeUpdate(); log.info("[$sql] OK ") }
