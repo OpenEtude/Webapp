@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f204f896-e785-4912-9de3-fc976cf524a5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/psql/init.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker-compose-prod.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/BootStrapService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/BootStrapService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose-prod.yml" afterPath="$PROJECT_DIR$/docker-compose-prod.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$USER_HOME$/.grails/" />
+    <ignored path="data/logs/catalina.2022-10-03.log" />
+    <ignored path="data/logs/catalina.2022-10-04.log" />
+    <ignored path="data/logs/host-manager.2022-10-03.log" />
+    <ignored path="data/logs/host-manager.2022-10-04.log" />
+    <ignored path="data/logs/localhost.2022-10-03.log" />
+    <ignored path="data/logs/localhost.2022-10-04.log" />
+    <ignored path="data/logs/manager.2022-10-03.log" />
+    <ignored path="data/logs/manager.2022-10-04.log" />
+    <ignored path="data/temp/JsecPermission.data" />
+    <ignored path="data/temp/JsecRole.data" />
+    <ignored path="data/temp/JsecRolePermissionRel.data" />
+    <ignored path="data/temp/JsecUser.data" />
+    <ignored path="data/temp/JsecUserPermissionRel.data" />
+    <ignored path="data/temp/JsecUserRoleRel.data" />
+    <ignored path="data/temp/org.grails.taggable.Tag.data" />
+    <ignored path="data/temp/org.grails.taggable.TagLink.data" />
+    <ignored path="data/temp/org.hibernate.cache.StandardQueryCache.data" />
+    <ignored path="data/temp/org.hibernate.cache.UpdateTimestampsCache.data" />
+    <ignored path="data/temp/Setting.data" />
+    <ignored path="data/temp/Traduction.data" />
+    <ignored path="data/temp/jsecurity-ehcache/org.jsecurity.realm.text.PropertiesRealm-0-accounts.data" />
+    <ignored path=".idea/dataSources/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,16 +50,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="init.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/psql/init.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="1874" column="41" lean-forward="false" selection-start-line="1874" selection-start-column="41" selection-end-line="1874" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pgstart.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pgstart.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -112,11 +120,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BootStrapService.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BootStrapService.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/services/BootStrapService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="530">
+              <caret line="51" column="41" lean-forward="true" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose-prod.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -172,9 +190,9 @@
         <option value="$PROJECT_DIR$/build.sh" />
         <option value="$PROJECT_DIR$/application.properties" />
         <option value="$PROJECT_DIR$/web-app/.gitignore" />
-        <option value="$PROJECT_DIR$/docker-compose-prod.yml" />
         <option value="$PROJECT_DIR$/db/psql/init.sql" />
         <option value="$PROJECT_DIR$/grails-app/services/BootStrapService.groovy" />
+        <option value="$PROJECT_DIR$/docker-compose-prod.yml" />
       </list>
     </option>
   </component>
@@ -187,8 +205,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="2418" />
+    <option name="height" value="1318" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -677,7 +695,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664371806466</updated>
       <workItem from="1664371807742" duration="470000" />
-      <workItem from="1664372298271" duration="23400000" />
+      <workItem from="1664372298271" duration="25805000" />
     </task>
     <task id="LOCAL-00001" summary="Bugfix atempt">
       <created>1664470543292</created>
@@ -798,14 +816,28 @@
       <option name="project" value="LOCAL" />
       <updated>1664660709009</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Bugfix atempt">
+      <created>1664883514899</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664883514899</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Bugfix atempt">
+      <created>1664898174388</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664898174388</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23870000" />
+    <option name="totallyTimeSpent" value="26275000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="2418" height="1318" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -815,11 +847,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37321624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28789163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Grails Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5192097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1175,19 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="29" />
-          <folding>
-            <marker date="1664820601691" expanded="true" signature="423:515" ph="environment: &lt;1 item&gt;" />
-            <marker date="1664820601691" expanded="true" signature="444:515" ph="DATABASE_…de=disable" />
-            <marker date="1664820601691" expanded="true" signature="798:947" ph="environment: &lt;5 keys&gt;" />
-            <marker date="1664820601691" expanded="true" signature="952:1339" ph="volumes: &lt;8 items&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-286">
@@ -1326,8 +1345,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/services/BootStrapService.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="530">
+          <caret line="51" column="41" lean-forward="true" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding />
         </state>
       </provider>
