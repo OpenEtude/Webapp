@@ -73,6 +73,7 @@ jobs:
             type=semver,pattern={{major}}
             type=sha
 
+
       - name: Project build
         run: |
           chmod +x ./build.sh
