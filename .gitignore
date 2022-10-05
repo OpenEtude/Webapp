@@ -6,4 +6,5 @@ dossiers2.xml
 gradle
 .gradle/
 .idea/workspace.xml
+data/
 
