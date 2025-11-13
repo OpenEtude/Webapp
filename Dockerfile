@@ -1,4 +1,4 @@
-FROM tomcat:7-alpine as tomcat-fresh
+FROM tomcat:9-alpine as tomcat-fresh
 RUN rm -Rf $CATALINA_HOME/webapps/* 
 RUN apk add --no-cache bash sudo p7zip postgresql-client
 
