@@ -8,7 +8,7 @@
 ## 🎯 Public Cible
 
 - **Notaires Marocains** : Solution clé en main pour la gestion quotidienne de votre étude
-- **Entreprises IT Marocaines** : Plateforme open source pour intégration, personnalisation et support
+- **SSII Marocaines** : Plateforme open source pour intégration, personnalisation et support
 
 ## ✨ Fonctionnalités Principales
 
