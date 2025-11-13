@@ -193,6 +193,8 @@ docker-compose -f docker-compose-prod.yml up -d
 
 ## 💰 Coûts AWS Lightsail
 
+*Novembre 2025*
+
 ### Infrastructure Mensuelle
 
 | Composant | Spécifications | Prix |
