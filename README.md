@@ -3,12 +3,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker Package](https://github.com/OpenEtude/Webapp/actions/workflows/main.yml/badge.svg)](https://github.com/OpenEtude/Webapp/actions/workflows/main.yml)
 
-**OpenEtude** est une application web complète de gestion pour les études notariales marocaines. Développée avec Grails, elle offre une solution moderne pour gérer les dossiers, clients, actes notariés, comptabilité et bien plus encore.
+**OpenEtude** est une application web complète de gestion pour les études notariales marocaines. Développée avec Grails, elle offre une solution moderne et open source pour gérer les dossiers, clients, actes notariés, comptabilité et bien plus encore.
+
+---
 
 ## 🎯 Public Cible
 
 - **Notaires Marocains** : Solution clé en main pour la gestion quotidienne de votre étude
-- **SSII Marocaines** : Plateforme open source pour intégration, personnalisation et support
+- **SSII Marocaines** : Plateforme open source pour intégration, personnalisation et support client
+
+---
 
 ## ✨ Fonctionnalités Principales
 
@@ -74,88 +78,7 @@
 - Exports Excel
 - Calendrier et planification
 
-## 🏗️ Architecture Technique
-
-### Contrôleurs Principaux
-
-L'application s'articule autour de **26 contrôleurs** gérant les différentes fonctionnalités :
-
-#### Gestion des Entités Principales (CRUD Complet)
-- **DossierController** : Opérations CRUD sur les dossiers, recherche, exports
-- **ClientController** : Gestion des clients, association aux opérations
-- **ActeController** : Actes notariés, recherche par répertoire
-- **OperationController** : Opérations commerciales/immobilières
-- **BienController** : Biens immobiliers et leurs caractéristiques
-
-#### Comptabilité & Finance
-- **CompteController** : Plan comptable, standardisation
-- **CompteBancaireController** : Comptes bancaires de l'étude
-- **EcritureController** : Écritures comptables globales
-- **EcritureDossierController** : Écritures par dossier
-
-#### Paramétrage & Configuration
-- **ParamController** : Paramètres système
-- **SettingController** : Configuration de l'application
-- **TypeDeBienController** : Types de biens
-- **TypeEcritureController** : Types d'écritures comptables
-- **GroupementController** : Groupements comptables
-
-#### Sécurité & Utilisateurs
-- **AuthController** : Authentification
-- **JsecUserController** : Gestion des utilisateurs
-- **JsecRoleController** : Gestion des rôles
-- **AdminController** : Administration système
-
-#### Utilitaires
-- **HomeController** : Page d'accueil et tableau de bord
-- **CalendarController** : Gestion du calendrier
-- **ActivityController** : Journal d'activité
-- **TraductionController** : Gestion des traductions
-
-### Modèles de Domaine
-
-L'application utilise **32 modèles de domaine** principaux :
-
-#### Entités Métier
-- **Dossier** : Dossier notarié (numéro, libellé, état, modèle)
-- **Client** : Client (nom, coordonnées, identité)
-- **Operation** : Opération commerciale
-- **Acte** : Acte notarié répertorié
-- **Bien** : Bien immobilier
-
-#### Comptabilité
-- **Compte** : Compte du plan comptable
-- **CompteBancaire** : Compte bancaire
-- **EcritureDossier** : Écriture comptable d'un dossier
-- **TypeEcriture** : Type d'écriture (recette, dépense)
-- **MoyenPaiement** : Moyen de paiement
-- **EtatEcriture** : État de l'écriture (brouillon, validé)
-
-#### Référentiels
-- **TypeDeBien** : Types de biens (terrain, appartement, etc.)
-- **Civilite** : Civilités (M., Mme, etc.)
-- **PieceIdentite** : Types de pièces d'identité
-- **CategorieEcriture** : Catégories d'écritures
-
-#### Sécurité
-- **JsecUser** : Utilisateur
-- **JsecRole** : Rôle
-- **JsecPermission** : Permission
-- Relations : **JsecUserPermissionRel**, **JsecRolePermissionRel**
-
-#### Système
-- **Activity** : Journal d'activité
-- **Setting** : Paramètres système
-- **Groupement** : Groupements comptables
-
-### Relations Entre Modèles
-
-```
-Client --> Operation --> Dossier --> EcritureDossier
-                   |         |            |
-                   v         v            v
-                 Bien      Acte        Compte
-```
+---
 
 ## 📋 Prérequis Système
 
@@ -166,22 +89,24 @@ Client --> Operation --> Dossier --> EcritureDossier
 - **Grails** : Version 1.3.8
 
 ### Ressources Recommandées (VPS)
-- **CPU** : 2 vCPU minimum
-- **RAM** : 2 GB minimum (4 GB recommandé)
+- **CPU** : 2 vCPUs minimum
+- **RAM** : 4 GB recommandé (2 GB minimum)
 - **Stockage** : 20 GB SSD minimum
 - **OS** : Linux (Ubuntu 20.04+ / Debian 10+ recommandé)
+
+---
 
 ## 🚀 Installation
 
 ### Option 1 : Installation avec Docker (Recommandée)
 
-#### 1. Cloner le dépôt
+#### Étape 1 : Cloner le dépôt
 ```bash
 git clone https://github.com/OpenEtude/Webapp.git
 cd Webapp
 ```
 
-#### 2. Configuration de l'environnement
+#### Étape 2 : Configuration de l'environnement
 Créer un fichier `.env` avec vos paramètres :
 ```env
 RDS_DB_NAME=etude
@@ -191,52 +116,60 @@ RDS_HOSTNAME=localhost
 RDS_PORT=5432
 ```
 
-#### 3. Lancer avec Docker Compose
+#### Étape 3 : Lancer avec Docker Compose
 ```bash
 docker-compose up -d
 ```
 
 L'application sera accessible sur `http://localhost:8080`
 
-### Option 2 : Installation sur AWS Lightsail (Recommandé pour Production)
+---
 
-AWS Lightsail est la **meilleure option** pour déployer OpenEtude en production :
+### Option 2 : Déploiement sur AWS Lightsail (Production)
 
-#### Avantages
-- ✅ Coût prévisible et économique (à partir de $5/mois)
-- ✅ PostgreSQL managé inclus
-- ✅ Snapshots et sauvegardes automatiques
-- ✅ Réseau privé sécurisé
-- ✅ Support IPv6
-- ✅ Interface simple et intuitive
+AWS Lightsail est la **meilleure option** pour déployer OpenEtude en production.
 
-#### Étapes de Déploiement
+#### ✅ Avantages AWS Lightsail
+- Coût prévisible et économique
+- PostgreSQL managé inclus
+- Snapshots et sauvegardes automatiques
+- Réseau privé sécurisé
+- Support IPv6
+- Interface simple et intuitive
+- Certificats SSL gratuits et gérés automatiquement
 
-1. **Créer une instance Lightsail**
+#### 📦 Étapes de Déploiement
+
+**1. Créer une instance Lightsail**
    - OS : Ubuntu 20.04 LTS
-   - Plan : 2 GB RAM minimum ($10/mois)
+   - Plan recommandé : 4 GB RAM ($24/mois)
 
-2. **Créer une base de données PostgreSQL managée**
-   - Plan : Standard ($15/mois)
+**2. Créer une base de données PostgreSQL managée**
+   - Plan : Standard 1 GB ($15/mois)
    - Version : PostgreSQL 13.x
    - Noter les identifiants de connexion
 
-3. **Configurer l'instance**
-```bash
-# Connexion SSH à l'instance
-ssh ubuntu@votre-instance-lightsail
+**3. Configurer l'instance**
 
-# Installation de Docker
+Connexion SSH à l'instance :
+```bash
+ssh ubuntu@votre-instance-lightsail
+```
+
+Installation de Docker :
+```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker ubuntu
+```
 
-# Installation de Docker Compose
+Installation de Docker Compose :
+```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-4. **Déployer l'application**
+**4. Déployer l'application**
 ```bash
 git clone https://github.com/OpenEtude/Webapp.git
 cd Webapp
@@ -250,16 +183,43 @@ nano .env
 docker-compose -f docker-compose-prod.yml up -d
 ```
 
-5. **Configuration réseau Lightsail**
-   - Ouvrir les ports 80 et 443 dans le firewall
-   - Attacher une IP statique
-   - Configurer un domaine (optionnel)
+**5. Configuration réseau et sécurité**
+   - Ouvrir les ports 80 et 443 dans le firewall Lightsail
+   - Attacher une IP statique (gratuite si attachée)
+   - Configurer un nom de domaine (optionnel)
+   - Configurer SSL/HTTPS avec Let's Encrypt (automatique et gratuit)
 
-#### Coût Estimé AWS Lightsail
-- Instance 2GB : $10/mois
-- PostgreSQL Standard : $15/mois
-- IP statique : Gratuite
-- **Total : ~$25/mois**
+---
+
+## 💰 Coûts AWS Lightsail
+
+### Infrastructure Mensuelle
+
+| Composant | Spécifications | Prix |
+|-----------|----------------|------|
+| **Instance 4GB** | 4 GB RAM, 2 vCPUs, 80 GB SSD, 4 TB Transfer | $24/mois |
+| **PostgreSQL Standard** | 1 GB RAM, 1 core, 40 GB SSD, 100 GB Transfer | $15/mois |
+| **IP Statique** | Incluse (gratuite si attachée à l'instance) | Inclus |
+| **Certificats SSL** | Let's Encrypt, renouvelé automatiquement | Gratuit |
+| **Nom de domaine** | .com/.net ou .ma | $1.25-1.67/mois |
+
+**Total mensuel : ~$40-41/mois**
+
+### Coûts Annuels
+
+| Scénario | Infrastructure | Installation* | Total 1ère année |
+|----------|---------------|---------------|------------------|
+| **Avec .com/.net** | ~$483/an | 2000-4000 DH | ~$683-883 |
+| **Avec .ma** | ~$488/an | 2000-4000 DH | ~$688-888 |
+
+*Les frais d'installation couvrent : configuration AWS, déploiement Docker, configuration base de données, réseau/firewall, SSL/HTTPS, sauvegardes, documentation et formation.
+
+### Notes Importantes
+- **IP Statique** : Gratuite tant qu'elle reste attachée à une instance active
+- **SSL/HTTPS** : Certificats Let's Encrypt configurés et renouvelés automatiquement sans frais
+- **IPv4** : Le coût de l'adresse IPv4 publique est inclus dans le prix de l'instance (depuis mai 2024)
+
+---
 
 ### Option 3 : Installation Manuelle
 
@@ -283,58 +243,153 @@ Modifier `grails-app/conf/DataSource.groovy` selon votre environnement.
 #### 4. Déploiement
 Copier le fichier `target/etude.war` dans le répertoire webapps de Tomcat.
 
-## 📖 Documentation Complémentaire
+---
 
-Pour plus d'informations détaillées, consultez :
-- [**ARCHITECTURE.md**](./ARCHITECTURE.md) - Architecture technique détaillée
-- [**INSTALLATION.md**](./INSTALLATION.md) - Guide d'installation complet
-- [**SUPPORT.md**](./SUPPORT.md) - Comment obtenir de l'aide
+## 🏗️ Architecture Technique
 
-## 🤝 Support
+### Contrôleurs (26 au total)
 
-Pour toute question, problème ou demande de fonctionnalité :
+#### Gestion des Entités Principales
+- **DossierController** : CRUD dossiers, recherche, exports
+- **ClientController** : Gestion clients, associations
+- **ActeController** : Actes notariés, recherche par répertoire
+- **OperationController** : Opérations commerciales/immobilières
+- **BienController** : Biens immobiliers et caractéristiques
 
-➡️ **Utilisez exclusivement [GitHub Issues](https://github.com/OpenEtude/Webapp/issues)**
+#### Comptabilité & Finance
+- **CompteController** : Plan comptable
+- **CompteBancaireController** : Comptes bancaires
+- **EcritureController** : Écritures comptables globales
+- **EcritureDossierController** : Écritures par dossier
 
-### Avant de créer une issue
-1. Vérifiez que votre problème n'a pas déjà été signalé
-2. Fournissez un maximum d'informations :
-   - Version de l'application
-   - Environnement (OS, Java, PostgreSQL)
-   - Logs d'erreur
-   - Étapes pour reproduire le problème
+#### Paramétrage
+- **ParamController** : Paramètres système
+- **SettingController** : Configuration application
+- **TypeDeBienController** : Types de biens
+- **TypeEcritureController** : Types d'écritures
+- **GroupementController** : Groupements comptables
 
-## 📜 Licence
+#### Sécurité & Administration
+- **AuthController** : Authentification
+- **JsecUserController** : Gestion utilisateurs
+- **JsecRoleController** : Gestion rôles
+- **AdminController** : Administration système
 
-Ce projet est sous licence **MIT**. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
+#### Utilitaires
+- **HomeController** : Tableau de bord
+- **CalendarController** : Calendrier
+- **ActivityController** : Journal d'activité
+- **TraductionController** : Traductions
 
-### En bref
-- ✅ Utilisation commerciale autorisée
-- ✅ Modification autorisée
-- ✅ Distribution autorisée
-- ✅ Utilisation privée autorisée
-- ℹ️ Fourni "tel quel", sans garantie
+### Modèles de Domaine (32 au total)
 
-## 🏆 Contributeurs
+#### Entités Métier
+Dossier • Client • Operation • Acte • Bien
 
-Merci à tous les contributeurs qui ont participé à ce projet !
+#### Comptabilité
+Compte • CompteBancaire • EcritureDossier • TypeEcriture • MoyenPaiement • EtatEcriture
 
-Pour contribuer, consultez [CONTRIBUTING.md](./CONTRIBUTING.md).
+#### Référentiels
+TypeDeBien • Civilite • PieceIdentite • CategorieEcriture
+
+#### Sécurité
+JsecUser • JsecRole • JsecPermission • JsecUserPermissionRel • JsecRolePermissionRel
+
+#### Système
+Activity • Setting • Groupement
+
+### Relations Entre Entités
+
+```
+Client --> Operation --> Dossier --> EcritureDossier
+              |            |              |
+              v            v              v
+            Bien         Acte          Compte
+```
+
+---
 
 ## 🔧 Stack Technique
 
-- **Framework** : Grails 1.3.8
-- **Langage** : Groovy, Java
-- **Base de données** : PostgreSQL 13+
-- **ORM** : Hibernate
-- **Serveur** : Apache Tomcat 7
-- **Frontend** : JavaScript, CSS3
-- **Sécurité** : JSecurity
-- **Build** : Gradle
-- **Conteneurisation** : Docker
+| Composant | Technologie |
+|-----------|-------------|
+| **Framework** | Grails 1.3.8 |
+| **Langages** | Groovy, Java |
+| **Base de données** | PostgreSQL 13+ |
+| **ORM** | Hibernate |
+| **Serveur** | Apache Tomcat 7 |
+| **Frontend** | JavaScript, CSS3 |
+| **Sécurité** | JSecurity |
+| **Build** | Gradle |
+| **Conteneurisation** | Docker |
 
-Pour la stack technique complète, voir [techstack.md](./techstack.md).
+Pour plus de détails, voir [techstack.md](./techstack.md)
+
+---
+
+## 📖 Documentation
+
+| Document | Description |
+|----------|-------------|
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | Architecture technique détaillée |
+| [INSTALLATION.md](./INSTALLATION.md) | Guide d'installation complet |
+| [SUPPORT.md](./SUPPORT.md) | Support et assistance |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Guide de contribution |
+
+---
+
+## 🤝 Support & Contribution
+
+### Obtenir de l'aide
+
+Pour toute question, problème ou demande de fonctionnalité :
+
+➡️ **[Créer une issue sur GitHub](https://github.com/OpenEtude/Webapp/issues)**
+
+**Avant de créer une issue :**
+1. ✅ Vérifiez que le problème n'a pas déjà été signalé
+2. 📝 Fournissez les informations suivantes :
+   - Version de l'application
+   - Environnement (OS, Java, PostgreSQL)
+   - Logs d'erreur complets
+   - Étapes pour reproduire le problème
+
+### Contribuer au projet
+
+Les contributions sont les bienvenues ! Consultez [CONTRIBUTING.md](./CONTRIBUTING.md) pour commencer.
+
+---
+
+## 📜 Licence
+
+Ce projet est sous licence **MIT**. Voir [LICENSE](./LICENSE) pour plus de détails.
+
+### Permissions
+- ✅ Utilisation commerciale
+- ✅ Modification
+- ✅ Distribution
+- ✅ Utilisation privée
+
+### Conditions
+- ℹ️ Fourni "tel quel", sans garantie
+- ℹ️ Conservation de la notice de licence
+
+---
+
+## 🏆 Contributeurs
+
+Merci à tous les contributeurs qui ont participé au développement d'OpenEtude !
+
+---
+
+## 🔗 Liens Utiles
+
+- **GitHub** : [https://github.com/OpenEtude/Webapp](https://github.com/OpenEtude/Webapp)
+- **Issues** : [https://github.com/OpenEtude/Webapp/issues](https://github.com/OpenEtude/Webapp/issues)
+- **Releases** : [https://github.com/OpenEtude/Webapp/releases](https://github.com/OpenEtude/Webapp/releases)
 
 ---
 
 **OpenEtude** - La solution open source pour notaires 2.0 🇲🇦
+
+*Propulsé par la communauté open source marocaine*
