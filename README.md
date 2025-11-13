@@ -10,7 +10,7 @@
 ## 🎯 Public Cible
 
 - **Notaires Marocains** : Solution clé en main pour la gestion quotidienne de votre étude
-- **SSII Marocaines** : Projet open source pour intégration, personnalisation et support client
+- **SSII & Intégrateurs** : Un projet open source prêt à l'emploi pour assurer l'installation et le support aux notaires qui l'utilisent.
 
 ---
 
