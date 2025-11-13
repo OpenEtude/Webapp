@@ -1,9 +1,8 @@
 #!/bin/bash
-#eval "$(aws ecr get-login --no-include-email)"
 export APPTYPE=etude
 export TENANT=sm
 export APPVERSION=1.0.0
-export IMAGE_URL=754835769352.dkr.ecr.eu-central-1.amazonaws.com/arkilog-beta-etude:1.0.0
+export IMAGE_URL=notaires/etude:1.0.0
 docker pull $IMAGE_URL
 docker run --rm -it --name $APPTYPE$TENANT \
   --expose 9010 \
