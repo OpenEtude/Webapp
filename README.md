@@ -207,12 +207,11 @@ docker-compose -f docker-compose-prod.yml up -d
 
 ### Coûts Annuels
 
-| Scénario | Infrastructure | Installation* | Total 1ère année |
-|----------|---------------|---------------|------------------|
-| **Avec .com/.net** | ~$483/an | 2000-4000 DH | ~$683-883 |
-| **Avec .ma** | ~$488/an | 2000-4000 DH | ~$688-888 |
+| Scénario | Infrastructure |
+|----------|---------------|
+| **Avec .com/.net** | ~$483/an |
+| **Avec .ma** | ~$488/an |
 
-*Les frais d'installation couvrent : configuration AWS, déploiement Docker, configuration base de données, réseau/firewall, SSL/HTTPS, sauvegardes, documentation et formation.
 
 ### Notes Importantes
 - **IP Statique** : Gratuite tant qu'elle reste attachée à une instance active
