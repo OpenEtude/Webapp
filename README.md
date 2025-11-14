@@ -6,7 +6,7 @@
 ![GitHub stars](https://img.shields.io/github/stars/OpenEtude/Webapp?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/OpenEtude/Webapp?style=social)
 ![Last commit](https://img.shields.io/github/last-commit/OpenEtude/Webapp)
-![Top language](https://img.shields.io/github/languages/top/OpenEtude/Webapp)
+![Dependabot](https://img.shields.io/badge/Dependencies-monitored-blue)
 ![Repo size](https://img.shields.io/github/repo-size/OpenEtude/Webapp)
 ![Linux](https://img.shields.io/badge/OS-Linux-green)
 
