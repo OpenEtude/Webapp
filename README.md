@@ -1,16 +1,14 @@
 # OpenEtude - Solution de Gestion pour Études Notariales
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Docker](https://img.shields.io/badge/Docker-ready-blue)
 [![Docker Package](https://github.com/OpenEtude/Webapp/actions/workflows/main.yml/badge.svg)](https://github.com/OpenEtude/Webapp/actions/workflows/main.yml)
-![License](https://img.shields.io/github/license/OpenEtude/Webapp)
 ![GitHub stars](https://img.shields.io/github/stars/OpenEtude/Webapp?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/OpenEtude/Webapp?style=social)
-![GitHub issues](https://img.shields.io/github/issues/OpenEtude/Webapp)
 ![Last commit](https://img.shields.io/github/last-commit/OpenEtude/Webapp)
 ![Top language](https://img.shields.io/github/languages/top/OpenEtude/Webapp)
 ![Repo size](https://img.shields.io/github/repo-size/OpenEtude/Webapp)
 ![Linux](https://img.shields.io/badge/OS-Linux-green)
-![Docker](https://img.shields.io/badge/Docker-ready-blue)
 
 **OpenEtude** est une application web complète de gestion pour les études notariales marocaines. Développée avec Grails, elle offre une solution moderne et open source pour gérer les dossiers, clients, actes notariés, comptabilité et bien plus encore.
 
