@@ -2,6 +2,15 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker Package](https://github.com/OpenEtude/Webapp/actions/workflows/main.yml/badge.svg)](https://github.com/OpenEtude/Webapp/actions/workflows/main.yml)
+![License](https://img.shields.io/github/license/OpenEtude/Webapp)
+![GitHub stars](https://img.shields.io/github/stars/OpenEtude/Webapp?style=social)
+![GitHub forks](https://img.shields.io/github/forks/OpenEtude/Webapp?style=social)
+![GitHub issues](https://img.shields.io/github/issues/OpenEtude/Webapp)
+![Last commit](https://img.shields.io/github/last-commit/OpenEtude/Webapp)
+![Top language](https://img.shields.io/github/languages/top/OpenEtude/Webapp)
+![Repo size](https://img.shields.io/github/repo-size/OpenEtude/Webapp)
+![Linux](https://img.shields.io/badge/OS-Linux-green)
+![Docker](https://img.shields.io/badge/Docker-ready-blue)
 
 **OpenEtude** est une application web complète de gestion pour les études notariales marocaines. Développée avec Grails, elle offre une solution moderne et open source pour gérer les dossiers, clients, actes notariés, comptabilité et bien plus encore.
 
@@ -344,10 +353,10 @@ Pour plus de détails, voir [techstack.md](./techstack.md)
 ### Obtenir de l'aide
 
 Pour toute question, problème ou demande de fonctionnalité :
+➡️ **[Contactez-nous via le Site Web](https://openetude.github.io/Webapp/)**
+➡️ **[Créer un ticket sur GitHub](https://github.com/OpenEtude/Webapp/issues)**
 
-➡️ **[Créer une issue sur GitHub](https://github.com/OpenEtude/Webapp/issues)**
-
-**Avant de créer une issue :**
+**Avant de créer un ticket :**
 1. ✅ Vérifiez que le problème n'a pas déjà été signalé
 2. 📝 Fournissez les informations suivantes :
    - Version de l'application
@@ -385,6 +394,7 @@ Merci à tous les contributeurs qui ont participé au développement d'OpenEtude
 
 ## 🔗 Liens Utiles
 
+- **Site Web** : [https://openetude.github.io/Webapp/](https://openetude.github.io/Webapp/)
 - **GitHub** : [https://github.com/OpenEtude/Webapp](https://github.com/OpenEtude/Webapp)
 - **Issues** : [https://github.com/OpenEtude/Webapp/issues](https://github.com/OpenEtude/Webapp/issues)
 - **Releases** : [https://github.com/OpenEtude/Webapp/releases](https://github.com/OpenEtude/Webapp/releases)
